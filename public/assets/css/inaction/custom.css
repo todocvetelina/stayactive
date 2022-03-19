@@ -1,0 +1,29 @@
+.sidebar,
+.main-header,
+.main-sidebar {
+    background-color: #006FDC;
+}
+
+
+.sidebar a,
+.sidebar .nav-link,
+.brand-link {
+    color: #fff;
+}
+
+.sidebar a:hover,
+.sidebar .nav-link:hover,
+.nav-pills .nav-link:not(.active):hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.content-wrapper,
+hr {
+    background-color: #fff;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
