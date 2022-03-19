@@ -114,7 +114,7 @@ class RecipeController extends Controller
     public function choose()
     {
         $recipes = Recipe::all();
-        return view('recipes.choose', compact('recipes'));
+        return view('inaction.recipes.choose', compact('recipes'));
     }
 
     public function postChoose(Request $request)

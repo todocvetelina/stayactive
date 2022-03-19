@@ -10,8 +10,7 @@ class Calculators
     {
         $menu->add('Калкулатори', [
             'icon' => 'calculator',
-            'order' => 99,
-            
+            'order' => 99,   
             'route' => 'boilerplate.calculator'
         ]);
     }
