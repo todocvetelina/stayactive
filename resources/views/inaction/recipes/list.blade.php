@@ -1,4 +1,3 @@
-
 @extends('boilerplate::layout.index', [
 'title' => 'Рецепти',
 'subtitle' => 'Списък с рецепти',
@@ -6,6 +5,7 @@
 ])
 
 @section('content')
+    @ability('admin', 'workouts_crud')
     <div class="row">
         <div class="col-sm-12 mb-3">
             <span class="float-right">
@@ -13,7 +13,6 @@
             </span>
         </div>
     </div>
+    @endability
     <x-boilerplate::datatable name="recipes" />
-
-
 @endsection

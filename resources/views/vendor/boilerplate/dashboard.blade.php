@@ -44,7 +44,7 @@
         calendar.addEvent({
             title: '{{ $recipe->title }}',
             start: '{{ $recipe->pivot->date }}',
-            url: '{{ route('boilerplate.recipes.index') }}',
+            url: '{{ route('boilerplate.recipes.show', $recipe->id) }}',
         });
 
         @endforeach

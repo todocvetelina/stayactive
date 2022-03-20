@@ -53,7 +53,7 @@ Route::group([
    // Recipes
    Route::get('recipes/choose', [RecipeController::class, 'choose'])->name('recipes.choose');
    Route::post('recipes/choose', [RecipeController::class, 'postChoose'])->name('recipes.postChoose');
-   Route::resource('recipes', RecipeController::class)->except('show');
+   Route::resource('recipes', RecipeController::class);
 
    // Calculator
    Route::view('/calculator', 'inaction.calculator')->name('calculator');

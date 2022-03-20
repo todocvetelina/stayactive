@@ -58,7 +58,7 @@ class WorkoutsDatatable extends Datatable
             Column::add()
                 ->width('20px')
                 ->actions(function (Workout $workout) {
-                    if(auth()->user()->hasPermission('workouts_crud')) {
+                    if(auth()->user()->ability('admin', 'workouts_crud')) {
                         return join([
                             Button::show('boilerplate.workouts.show', $workout),
                             Button::edit('boilerplate.workouts.edit', $workout),

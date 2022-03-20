@@ -10,7 +10,6 @@ class Recipes
     {
         $item = $menu->add('Reцепти', [
             'icon' => 'cookie',
-            'permission' => 'recipes_crud',
             'order' => 100,
         ]);
 
@@ -19,7 +18,8 @@ class Recipes
         ]);
 
         $item->add('Създай рецепта', [
-            'route' => 'boilerplate.recipes.create'
+            'route' => 'boilerplate.recipes.create',
+            'permission' => 'recipes_crud'
         ]);
     }
 }

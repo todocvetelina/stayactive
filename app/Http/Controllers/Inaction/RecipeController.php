@@ -11,7 +11,7 @@ class RecipeController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('ability:admin,workouts_crud', [
+        $this->middleware('ability:admin,recipes_crud', [
             'only' => [
                 'create',
                 'edit',
@@ -70,6 +70,11 @@ class RecipeController extends Controller
             ->with('growl', ['Успех!', 'success']);
     }
 
+
+    public function show(Recipe $recipe)
+    {
+        return view('inaction.recipes.show', compact('recipe'));
+    }
 
     /**
      * Show the form for editing the specified resource.

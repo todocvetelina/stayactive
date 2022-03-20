@@ -2,7 +2,6 @@
 'title' => 'Тренировкa',
 'subtitle' => 'Тренировка',
 'breadcrumb' => [
-'Управление на тренировки' => 'boilerplate.workouts.index',
 'Тренировка']
 ])
 
