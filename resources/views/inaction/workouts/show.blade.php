@@ -24,6 +24,7 @@
                 </div>
                 </iframe>
                 <h2>{{ $workout->title }} <span class="badge bg-secondary">{{ $workout->duration }} минути</span></h2>
+                <p>Категория: <strong>{{ $workout->category->name }}</strong></p>
                 <p>{!! $workout->description !!}</p>
             </x-boilerplate::card>
         </div>

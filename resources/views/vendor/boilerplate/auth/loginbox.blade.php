@@ -1,6 +1,8 @@
 <div class="login-box">
     <div class="login-logo">
-       <img src="{{ asset('assets/images/logo.png') }}" alt="">
+        <a href="/">
+            <img src="{{ asset('assets/images/logo.png') }}" alt="">
+        </a>
     </div>
 
     <div class="card">

@@ -5,7 +5,7 @@
 ])
 
 @section('content')
-    @ability('admin', 'workouts_crud')
+    @ability('admin', 'recipes_crud')
     <div class="row">
         <div class="col-sm-12 mb-3">
             <span class="float-right">

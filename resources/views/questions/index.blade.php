@@ -1,8 +1,8 @@
 @extends('layouts.index')
 
 @section('content')
-<h2 class="title is-2 has-text-centered">Блог</h2>
-<form method="POST" action="{{ route('questions.store') }}" enctype="multipart/form-data">
+<h2 class="title is-2 has-text-centered">Задайте въпрос към инструктор</h2>
+<form method="POST" action="{{ route('questions.store') }}" autocomplete="off">
     @csrf
     <div class="field">
         <label for="email" class="label">Имейл</label>

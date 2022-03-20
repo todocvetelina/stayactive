@@ -51,7 +51,7 @@ class RecipesDatatable extends Datatable
             Column::add()
                 ->width('20px')
                 ->actions(function (Recipe $recipe) {
-                    if(auth()->user()->ability('admin', 'workouts_crud')) {
+                    if(auth()->user()->ability('admin', 'recipes_crud')) {
                         return join([
                             Button::edit('boilerplate.recipes.edit', $recipe),
                             Button::show('boilerplate.recipes.show', $recipe),
