@@ -58,13 +58,13 @@ class WorkoutsDatatable extends Datatable
             Column::add()
                 ->width('20px')
                 ->actions(function (Workout $workout) {
-                    // if(auth()->user()->hasPermission('workouts_crud')) {
-                    //     return join([
-                    //         Button::show('boilerplate.workouts.show', $workout),
-                    //         Button::edit('boilerplate.workouts.edit', $workout),
-                    //         Button::delete('boilerplate.workouts.destroy', $workout),
-                    //     ]);
-                    // }
+                    if(auth()->user()->hasPermission('workouts_crud')) {
+                        return join([
+                            Button::show('boilerplate.workouts.show', $workout),
+                            Button::edit('boilerplate.workouts.edit', $workout),
+                            Button::delete('boilerplate.workouts.destroy', $workout),
+                        ]);
+                    }
                     return join([
                         Button::show('boilerplate.workouts.show', $workout),
                     ]);

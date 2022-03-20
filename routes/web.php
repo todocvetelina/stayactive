@@ -28,6 +28,9 @@ Route::get('/', function () {
 Route::view('/about', 'about')->name('about');
 Route::view('/faq', 'faq')->name('faq');
 
+// Questions
+Route::resource('questions', App\Http\Controllers\QuestionController::class)->only('index', 'store');
+
 
 Route::group([
     'prefix'     => config('boilerplate.app.prefix', ''),

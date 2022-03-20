@@ -9,6 +9,18 @@ use Illuminate\Http\Request;
 
 class RecipeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('ability:admin,workouts_crud', [
+            'only' => [
+                'create',
+                'edit',
+                'update',
+                'destroy'
+            ]
+        ]);
+    }
+
     /**
      * Display a listing of the resource.
      *

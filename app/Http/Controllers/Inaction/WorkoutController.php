@@ -17,7 +17,7 @@ class WorkoutController extends Controller
                 'create',
                 'edit',
                 'update',
-                'delete'
+                'destroy'
             ]
         ]);
     }
